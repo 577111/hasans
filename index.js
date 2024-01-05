@@ -1,8 +1,7 @@
-const express = require('express');
-const route = require('./routes/users.route');
+const express=require('express')
 const app = express();
+const router = require('./routes/users.route');
 
-express.request(route);
 
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
@@ -11,6 +10,10 @@ app.listen(PORT,()=>{
 
 
 })
+app.use(router)
+
+
+
 
 app.get("/", (req,res)=>{
     res.send({
@@ -18,3 +21,6 @@ app.get("/", (req,res)=>{
     })
 })
 
+app.get('/',(req,res)=>{
+    res.send()
+})
