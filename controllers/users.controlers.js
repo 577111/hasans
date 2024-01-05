@@ -1,5 +1,5 @@
 const homepage=(req,res)=>{
-    res.send("hi")
+    res.render("index",{});
 }
  const teachers=(req,res)=>{
     res.send("teacher")
