@@ -1,5 +1,6 @@
-const homepage=(req,res)=>{
-    res.send("hi");
+const path= require("path")
+const homepage =(req,res)=>{
+    res.sendFile(path.join(__dirname+"/../views/index.html"))
 }
  const teachers=(req,res)=>{
     res.send("teacher")
@@ -20,4 +21,4 @@ const admin=(req,res)=>{
     res.send("admin")
 }
 
-module.exports= {homepage,teachers, students, gallary, about, classname, admin};
+module.exports= {homepage,teachers, students, gallary, about, classname, admin}
