@@ -42,7 +42,7 @@ new studentinformation({
 
 app.get("/", async(req,res)=>{
     const getAllStudents=await studentinformation.find();
-    res.status(200).json(getAllStudents);
+    res.status(200).json({getAllStudents});
     console.log(getAllStudents)
 })
 
