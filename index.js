@@ -2,14 +2,13 @@ const express=require('express')
 const app = express();
 const mongoose= require('mongoose');
 
-const cors = require('cors');
 const studentrouter = require('./routes/student.route');
 
 app.use(studentrouter)
 
 //app.set("view engine","ejs")
 app.use(express.urlencoded({extended:true}))
-app.use(cors);
+
 app.use(express.static("public"));
 require('dotenv').config();
 
