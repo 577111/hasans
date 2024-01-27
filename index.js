@@ -2,9 +2,6 @@ const express=require('express')
 const app = express();
 const mongoose= require('mongoose');
 
-const studentrouter = require('./routes/student.route');
-
-app.use(studentrouter)
 
 //app.set("view engine","ejs")
 app.use(express.urlencoded({extended:true}))
