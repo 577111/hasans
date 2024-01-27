@@ -44,10 +44,6 @@ app.get("/", async(req,res)=>{
     console.log(getAllStudents)
 })
 
-app.get("/student",(req,res)=>{
-    res.send("i am student route")
-})
-
 
 
 
