@@ -18,7 +18,7 @@ mongoose.connect(url)
     console.log('mongodb atlas is connnected')
 })
 .catch((err)=>{
-    console.log("error is here")
+    console.log("error is showed")
     
 })
 
